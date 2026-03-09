@@ -1,24 +1,53 @@
-# <h1 align="center">LAPORAN PRAKTIKUM</h1>
-### <p align="center">Aplikasi Berbasis Platform</p>
+<div align="center">
+  <br />
 
-### <p align="center">Modul 3</p>
-### <p align="center">HTML</p>
+  <h1>LAPORAN PRAKTIKUM <br>
+  APLIKASI BERBASIS PLATFORM
+  </h1>
 
-<p align="center"> <img width="367" height="369" alt="image" src="https://github.com/user-attachments/assets/80ef8bff-aca4-4e1a-b7eb-6d894fdb53ad" /> </p> 
+  <br />
 
-### <p align="center">Disusun Oleh:</p>
-### <p align="center">ANDIKA NEVIANTORO</p>
-### <p align="center">2311102167</p>
-### <p align="center">S1 IF-11-01</p>
+  <h3>MODUL I <br>
+  GIT
+  </h3>
 
-### <p align="center">Dosen Pengampu:</p>
-### <p align="center">Dimas Fanny Hebrasianto Permadi, S.ST., M.Kom</p>
+  <br />
+
+  <img width="300" height="369" alt="logo" src="https://github.com/user-attachments/assets/b65bc963-853b-4946-b998-8845eeaa2d39" />
 
 
-### <p align="center">PROGRAM STUDI S1 INOFRMATIKA</p>
-### <p align="center">FAKULTAS INFORMATIKA</p>
-### <p align="center">TELKOM UNIVERSITY PURWOKERTO</p>
-### <p align="center">2025/2026</p>
+  <br />
+  <br />
+  <br />
+
+  <h3>Disusun Oleh :</h3>
+
+  <p>
+    <strong>Andika Neviantoro</strong><br>
+    <strong>2311102167</strong><br>
+    <strong>S1 IF-11-REG01</strong>
+  </p>
+
+  <br />
+
+  <h3>Dosen Pengampu :</h3>
+
+  <p>
+    <strong>Dimas Fanny Hebrasianto Permadi, S.ST., M.Kom</strong>
+  </p>
+  
+  <br />
+  <br />
+    <h4>Asisten Praktikum :</h4>
+    <strong>Apri Pandu Wicaksono </strong> <br>
+    <strong>Rangga Pradarrell Fathi</strong>
+  <br />
+
+  <h3>LABORATORIUM HIGH PERFORMANCE
+ <br>FAKULTAS INFORMATIKA <br>UNIVERSITAS TELKOM PURWOKERTO <br>2026</h3>
+</div>
+
+<hr>
 
 
 # Dasar Teori
