@@ -23,16 +23,16 @@
 
 # Dasar Teori
 
-## Pengenalan Git
+## 2.1 Pengenalan Git
 Git adalah salah satu sistem pengontrol versi (Version Control System) pada proyek perangkat lunak yang diciptakan oleh Linus Torvalds. Pengontrol versi bertugas mencatat setiap perubahan pada file proyek yang dikerjakan oleh banyak orang maupun sendiri. Git dikenal juga dengan distributed revision control (VCS terdistribusi), artinya penyimpanan database Git tidak hanya berada dalam satu tempat saja.
 
-## Instalasi Git
+## 2.2 Instalasi Git
 Disini saya sudah pernah install git 2.33.0.windows.2 dan saya melakukan pengecekan git pada CMD agar pasti sudah terinstall.
 <p align="center"><img width="639" height="317" alt="image" src="https://github.com/user-attachments/assets/9ebedc04-119b-46e7-913b-1495b51156b3" /></p>
 <p align="center">git sudah terinstall</p>
 
-## Penggunaan Git
-### Membuat repository
+## 2.3 Penggunaan Git
+### 2.3.1 Membuat repository
 - Buka Github.com
   <img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/2bd7aa5b-e26a-42bd-8665-6efd29f30929" />
 - Isi detail repository yang akan dibuat
@@ -74,6 +74,14 @@ D:\MATKUL SEMS 6\PRAKTIKUM ABP\Buat Repo>
 - Jika sudah, refresh halaman Github dan repository berhasil di buat
   <img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/116dfaaa-b31a-45db-bb9a-cd946ad2ce81" />
 
+### 2.3.2 Clone Repository milik orang lain
+Untuk dapat bekerja sama dengan orang lain, kita dapat melakukan cloning repositori orang lain, berikut ini caranya:
+- Buka repositori yang akan di-clone pada Github, lalu klik tombol clone.
+  <img width="975" height="527" alt="image" src="https://github.com/user-attachments/assets/ce68815a-a9af-4f4d-9ae1-bae1954bfb73" />
+- Copy text yang muncul seperti dibawah ini, ini merupakan url dari repositori tujuan yang akan di clone.
+  <img width="789" height="613" alt="image" src="https://github.com/user-attachments/assets/6a8e9d2b-6482-403f-af70-cb33dd92230b" />
+- Buka command prompt dan ketikan perintah ini
+  <img width="975" height="324" alt="image" src="https://github.com/user-attachments/assets/a3d9f8d5-f140-4939-9eaf-92a0fee54e9f" />
 
-
-
+# UNGUIDED (Melakukan setup repository via CLI)
+Sudah dilakukan dibagian atas pada dasar teori
