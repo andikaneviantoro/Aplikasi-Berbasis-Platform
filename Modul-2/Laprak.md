@@ -13,7 +13,8 @@
 
   <br />
 
-  <img src="images/logo.jpeg" alt="Logo" width="300">
+  <img width="300" height="369" alt="logo" src="https://github.com/user-attachments/assets/b65bc963-853b-4946-b998-8845eeaa2d39" />
+
 
   <br />
   <br />
