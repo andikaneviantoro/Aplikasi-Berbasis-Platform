@@ -1,5 +1,5 @@
 # <h1 align="center">LAPORAN PRAKTIKUM</h1>
-### <p align="center">Algoritma Pemrograman</p>
+### <p align="center">Aplikasi Berbasis Platform</p>
 
 ### <p align="center">Modul 2</p>
 ### <p align="center">Git</p>
