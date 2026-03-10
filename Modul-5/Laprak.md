@@ -7,13 +7,14 @@
 
   <br />
 
-  <h3>MODUL I <br>
-  GIT
+  <h3>MODUL 4 <br>
+  BOOTSTRAP
   </h3>
 
   <br />
 
-  <img width="300" height="369" alt="logo" src="https://github.com/user-attachments/assets/b65bc963-853b-4946-b998-8845eeaa2d39" />
+  <img width="512" height="512" alt="telyu" src="https://github.com/user-attachments/assets/1e1bc01f-8ed0-4bde-a071-24bd48f20a83" />
+
 
 
   <br />
