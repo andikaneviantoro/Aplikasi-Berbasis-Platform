@@ -7,13 +7,14 @@
 
   <br />
 
-  <h3>MODUL I <br>
-  GIT
+  <h3>MODUL 2 <br>
+  HTML
   </h3>
 
   <br />
 
-  <img width="300" height="369" alt="logo" src="https://github.com/user-attachments/assets/b65bc963-853b-4946-b998-8845eeaa2d39" />
+  <img width="512" height="512" alt="telyu" src="https://github.com/user-attachments/assets/73fb8096-8912-4295-aeb9-ff3d2f901790" />
+
 
 
   <br />
