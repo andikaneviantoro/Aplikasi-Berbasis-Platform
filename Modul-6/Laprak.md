@@ -7,13 +7,14 @@
 
   <br />
 
-  <h3>MODUL I <br>
-  GIT
+  <h3>MODUL 5 <br>
+  
   </h3>
 
   <br />
 
-  <img width="300" height="369" alt="logo" src="https://github.com/user-attachments/assets/b65bc963-853b-4946-b998-8845eeaa2d39" />
+  <img width="512" height="512" alt="telyu" src="https://github.com/user-attachments/assets/724a3291-bcf9-448d-a395-3886a8659d79" />
+
 
 
   <br />
@@ -52,7 +53,7 @@
 
 # Dasar Teori
 
-## 6.1. Pengenalan Bootstrap
+## 6.1. Pengenalan Javascript
 ### 6.1.1. Sejarah Singkat Javascript
 Javascript, seperti namanya, merupakan bahasa pemrograman scripting. Dan seperti bahasa scripting lainnya, Javascript umumnya digunakan hanya untuk program yang tidak terlalu besar, biasanya hanya beberapa ratus baris. Javascript pada umumnya mengontrol program yang berbasis Java. Jadi memang pada dasarnya Javascript tidak dirancang untuk digunakan dalam aplikasi skala besar. Meskipun dibuat dengan tujuan awal untuk mengendalikan program Java, komunitas Javascript
 menggunakan bahasa ini untuk tujuan lain, memanipulasi gambar dan isi dari dokumen HTML. Singkatnya, pada akhirnya Javascript digunakan untuk satu tujuan utama, “menghidupkan” dokumen HTML dengan mengubah konten statis menjadi dinamis dan interaktif. Bersamaan dengan perkembangan Internet dan dunia web yang pesat, Javascript akhirnya menjadi bahasa utama dan satu-satunya untuk membuat HTML menjadi interaktif di dalam browser.
