@@ -167,9 +167,98 @@ app.get('/api/products/:id',     ...) // READ satu
 app.put('/api/products/:id',     ...) // UPDATE
 app.delete('/api/products/:id',  ...) // DELETE
 ```
+### Halaman Form Tambah Produk
+<p align="center"><img width="1919" height="908" alt="image" src="https://github.com/user-attachments/assets/b2299a39-ac6a-43a8-ba97-35276465aa02" /></p>
+
+### Halaman Tabel Data Produk
+<p align="center"><img width="1917" height="902" alt="image" src="https://github.com/user-attachments/assets/739c76e4-3026-4778-b43f-5a4ec1ce11f2" /></p>
+
+### Halaman Detail & Edit Data
+<p align="center"><img width="1918" height="903" alt="image" src="https://github.com/user-attachments/assets/9971f166-24a0-4a31-b4c0-3665e9f8e5e9" /></p>
+<p align="center"><img width="1919" height="914" alt="image" src="https://github.com/user-attachments/assets/3581073c-2af8-44f5-91c5-4dd0c5fa375c" /></p>
+
+### Hapus Data
+<p align="center"><img width="1916" height="906" alt="image" src="https://github.com/user-attachments/assets/5c97aea1-5312-49e7-a900-a5b3420f5808" /></p>
+
+### Hasil Operasi CRUD (Tambah, Edit, dan Hapus Data)
+
+- Tambah Data
+<p align="center"><img width="1918" height="909" alt="image" src="https://github.com/user-attachments/assets/859ce593-a126-472b-ae91-380a9b0d3c20" /></p>
+<p align="center"><img width="1352" height="585" alt="image" src="https://github.com/user-attachments/assets/a014c7ad-bad6-498c-a974-40f422d229ab" /></p>
+
+- Edit Data
+<p align="center"><img width="1917" height="908" alt="image" src="https://github.com/user-attachments/assets/c7b228fa-a354-4080-a727-8177759ce5be" /></p>
+<p align="center"><img width="1360" height="574" alt="image" src="https://github.com/user-attachments/assets/cbefed74-8df6-44c3-8ad8-a4fef3820f30" /></p>
+
+- Hapus Data
+<p align="center"><img width="1919" height="908" alt="image" src="https://github.com/user-attachments/assets/35ab054f-f58c-458a-80fc-1d5604cd4e25" /></p>
+<p align="center"><img width="1915" height="902" alt="image" src="https://github.com/user-attachments/assets/fbe4267a-b600-43d0-9a91-5d507bb9b9ff" /></p>
 
 
-## 1.4
-## 1.5
-## 1.6
-## 1.7 
+## 1.4 Penggunaan jQuery dan jQuery Plugin
+jQuery 3.7.1 digunakan untuk manipulasi DOM dan komunikasi AJAX ke seluruh endpoint API tanpa reload halaman. jQuery DataTables 1.10.21 digunakan sebagai plugin tabel interaktif yang menyediakan fitur search, sorting, dan pagination secara otomatis.
+
+Kode Program - CDN jQuery & Plugin DataTable
+```
+<!-- jQuery 3.7.1 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+<!-- jQuery DataTable Plugin -->
+<script src=".../datatables/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src=".../datatables/1.10.21/js/dataTables.bootstrap5.min.js"></script>
+```
+Kode Program - jQuery AJAX untuk Operasi DELETE
+```
+$.ajax({
+  url: `/api/products/${id}`,
+  type: 'DELETE',
+  success: function (res) {
+    showToast(`'${res.data.nama}' berhasil dihapus.`);
+    dt.ajax.reload(updateStats, false); // reload tanpa refresh halaman
+  }
+});
+```
+Tampilan DataTable aktif (Dropdown Terbuka & Pagination Terlihat)
+<p align="center"><img width="1359" height="581" alt="image" src="https://github.com/user-attachments/assets/6cc718bf-b2ec-43fd-b00c-feac2d779f46" /></p>
+
+## 1.5 Format Data JSON dengan jQuery DataTable
+Data produk disimpan dalam file products.json dan disajikan melalui endpoint GET /api/products dalam format JSON. jQuery DataTable dikonfigurasi dengan ajax untuk mengambil dan menampilkan data JSON tersebut secara otomatis.
+
+Kode Program - Struktur File JSON
+```
+[
+  {
+    "id": 1,
+    "nama": "Nike Air Zoom Pegasus 40",
+    "kategori": "Sepatu",
+    "harga": 1850000,
+    "stok": 12,
+    "createdAt": "2025-01-10"
+  }
+]
+```
+Kode Program - Konfigurasi DataTable Ajax JSON
+```
+dt = $('#tblProduk').DataTable({
+  ajax: {
+    url: '/api/products',  // endpoint yang mengembalikan JSON
+    type: 'GET',
+    dataSrc: 'data'        // baca array dari field 'data' di response
+  },
+  columns: [
+    { data: 'id' }, { data: 'nama' }, { data: 'kategori' },
+    { data: 'harga' }, { data: 'stok' }, { data: 'createdAt' },
+    { data: 'id' }   // kolom aksi
+  ],
+  pageLength: 5,
+  lengthMenu: [5, 10, 25, 50]
+});
+```
+Struktur Data JSON
+<p align="center"><img width="1917" height="1018" alt="image" src="https://github.com/user-attachments/assets/5cd3e516-a0c2-4dba-a8aa-9129a02fac3b" /></p>
+
+Fitur Search DataTable
+<p align="center"><img width="1356" height="352" alt="image" src="https://github.com/user-attachments/assets/d0fe0aee-cd6c-4282-93ed-9b48b02b02dc" /></p>
+
+# Link Video Presentasi
+Lihat disini: https://drive.google.com/file/d/1DiA1Pct5q_z5Tc56a6cBdw4R_-H-AZwk/view?usp=sharing
