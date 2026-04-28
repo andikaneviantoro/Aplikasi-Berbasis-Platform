@@ -7,8 +7,8 @@
 
   <br />
 
-  <h3><br>
-  Modul 1-2 Mobile
+  <h3>Modul 1-2<br>
+  Mobile
   </h3>
 
   <br />
