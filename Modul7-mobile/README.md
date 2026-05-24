@@ -1,6 +1,86 @@
+<div align="center">
+  <br />
 
+  <h1>LAPORAN PRAKTIKUM <br>
+  APLIKASI BERBASIS PLATFORM
+  </h1>
+
+  <br />
+
+  <h3>MODUL - 7 Mobile<br>
+  
+  </h3>
+
+  <br />
+
+  <img width="512" height="512" alt="telyu" src="https://github.com/user-attachments/assets/22ae9b17-5e73-48a6-b5dd-281e6c70613e" />
+
+
+
+  <br />
+  <br />
+  <br />
+
+  <h3>Disusun Oleh :</h3>
+
+  <p>
+    <strong>Andika Neviantoro</strong><br>
+    <strong>2311102167</strong><br>
+    <strong>S1 IF-11-REG01</strong>
+  </p>
+
+  <br />
+
+  <h3>Dosen Pengampu :</h3>
+
+  <p>
+    <strong>Dimas Fanny Hebrasianto Permadi, S.ST., M.Kom</strong>
+  </p>
+  
+  <br />
+  <br />
+    <h4>Asisten Praktikum :</h4>
+    <strong>Apri Pandu Wicaksono </strong> <br>
+    <strong>Rangga Pradarrell Fathi</strong>
+  <br />
+
+  <h3>LABORATORIUM HIGH PERFORMANCE
+ <br>FAKULTAS INFORMATIKA <br>UNIVERSITAS TELKOM PURWOKERTO <br>2026</h3>
+</div>
+
+<hr>
 
 ## 📚 Dasar Teori
+
+Tugas Praktik Modul 7 – Flutter
+Buat aplikasi sederhana bertema “Data Mahasiswa” dengan ketentuan:
+
+* Memiliki 3 halaman:
+   1. Home
+   2. Form Mahasiswa
+   3. Profil Developer
+* Form berisi:
+   * Nama
+   * NIM
+   * Kelas
+* Tambahkan tombol Simpan untuk menampilkan data yang diinput.
+* Saat tombol ditekan, tampilkan SnackBar sebagai notifikasi berhasil.
+* Gunakan:
+   * StatefulWidget
+   * StatelessWidget
+   * Navigator.push & Navigator.pop
+   * Google Fonts package
+* Tambahkan minimal:
+   * AppBar
+   * Container
+   * Column
+   * ElevatedButton
+Bonus
+
+* Icon
+* Tema warna menarik
+Output
+Aplikasi dapat berpindah halaman, menampilkan data mahasiswa, dan menampilkan notifikasi SnackBar.
 
 ### 1. Flutter
 
@@ -427,3 +507,18 @@ ElevatedButton.icon(
 | **Home** | Hero banner gradient, info cards, menu navigasi |
 | **Form Mahasiswa** | Input Nama/NIM/Kelas, validasi, kartu hasil, SnackBar |
 | **Profil Developer** | Info akademik, fitur aplikasi, tombol kembali |
+
+## Output:
+
+### Home
+<p align="center"><img width="308" height="548" alt="image" src="https://github.com/user-attachments/assets/3baf5a0f-36e8-4ec6-bc02-e5e1b76e0a2f" /></p>
+
+### From Mahasiswa
+<p align="center"><img width="306" height="544" alt="image" src="https://github.com/user-attachments/assets/706b7ed2-7057-45da-af57-3dafb3b785b8" /></p>
+
+### Snackbar
+<p align="center"><img width="306" height="545" alt="image" src="https://github.com/user-attachments/assets/2ee9cff6-d158-4b8a-892e-7e0aa66adec0" /></p>
+
+### Profil Developer
+<p align="center"><img width="306" height="543" alt="image" src="https://github.com/user-attachments/assets/d15b8961-e92b-48b4-9a4f-10b39a429c69" /></p>
+
