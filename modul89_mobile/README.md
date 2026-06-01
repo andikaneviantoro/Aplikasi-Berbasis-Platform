@@ -1,27 +1,55 @@
+<div align="center">
+  <br />
+
+  <h1>LAPORAN PRAKTIKUM <br>
+  APLIKASI BERBASIS PLATFORM
+  </h1>
+
+  <br />
+
+  <h3>MODUL - 8&9 Mobile<br>
+  Notifikasi & API Perangkat Keras
+  </h3>
+
+  <br />
+
+  <img width="512" height="512" alt="telyu" src="https://github.com/user-attachments/assets/22ae9b17-5e73-48a6-b5dd-281e6c70613e" />
 
 
-# 📱 Laporan Praktikum — Notifikasi & API Perangkat Keras
 
-> **Mata Kuliah:** Pemrograman Mobile  
-> **Topik:** Notifikasi & API Perangkat Keras  
-> **Framework:** Flutter (Dart)  
-> **Platform:** Android & iOS
+  <br />
+  <br />
+  <br />
 
----
+  <h3>Disusun Oleh :</h3>
 
-## 📋 Daftar Isi
+  <p>
+    <strong>Andika Neviantoro</strong><br>
+    <strong>2311102167</strong><br>
+    <strong>S1 IF-11-REG01</strong>
+  </p>
 
-1. [Deskripsi Proyek](#-deskripsi-proyek)
-2. [Dasar Teori](#-dasar-teori)
-3. [Struktur Proyek](#-struktur-proyek)
-4. [Dependencies](#-dependencies)
-5. [Fitur 1 — Ambil Foto (Camera API)](#-fitur-1--ambil-foto-camera-api)
-6. [Fitur 2 — Pilih Foto dari Galeri](#-fitur-2--pilih-foto-dari-galeri)
-7. [Fitur 3 — Notifikasi Lokal](#-fitur-3--notifikasi-lokal)
-8. [Konfigurasi Platform](#-konfigurasi-platform)
-9. [Cara Menjalankan](#-cara-menjalankan)
+  <br />
 
----
+  <h3>Dosen Pengampu :</h3>
+
+  <p>
+    <strong>Dimas Fanny Hebrasianto Permadi, S.ST., M.Kom</strong>
+  </p>
+  
+  <br />
+  <br />
+    <h4>Asisten Praktikum :</h4>
+    <strong>Apri Pandu Wicaksono </strong> <br>
+    <strong>Rangga Pradarrell Fathi</strong>
+  <br />
+
+  <h3>LABORATORIUM HIGH PERFORMANCE
+ <br>FAKULTAS INFORMATIKA <br>UNIVERSITAS TELKOM PURWOKERTO <br>2026</h3>
+</div>
+
+<hr>
+
 
 ## 📌 Deskripsi Proyek
 
@@ -79,42 +107,6 @@ Notifikasi lokal adalah notifikasi yang dibuat dan ditampilkan oleh aplikasi itu
 
 Pada Android 6.0+ (API 23), akses ke kamera, penyimpanan, dan notifikasi harus diminta secara eksplisit saat runtime. Pada Android 13+ (API 33), izin notifikasi (`POST_NOTIFICATIONS`) juga harus diminta secara runtime. Flutter menangani ini melalui deklarasi di `AndroidManifest.xml` dan runtime request oleh masing-masing package.
 
----
-
-## 📁 Struktur Proyek
-
-```
-flutter_praktikum/
-├── lib/
-│   ├── main.dart                  # Entry point & inisialisasi notifikasi
-│   ├── home_page.dart             # UI halaman utama + logika kamera/galeri
-│   └── notification_service.dart  # Service notifikasi lokal
-├── android/
-│   └── app/src/main/
-│       ├── AndroidManifest.xml    # Izin kamera, galeri, notifikasi
-│       └── res/xml/
-│           └── file_paths.xml     # Konfigurasi FileProvider
-├── ios/
-│   └── Runner/
-│       └── Info.plist             # Deskripsi izin kamera & galeri (iOS)
-└── pubspec.yaml                   # Dependencies Flutter
-```
-
----
-
-## 📦 Dependencies
-
-```yaml
-# pubspec.yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  image_picker: ^1.0.7               # Akses kamera dan galeri
-  flutter_local_notifications: ^17.0.0  # Notifikasi lokal
-  cupertino_icons: ^1.0.6            # Ikon material tambahan
-```
-
----
 
 ## 📷 Fitur 1 — Ambil Foto (Camera API)
 
@@ -248,7 +240,7 @@ class _CameraButton extends StatelessWidget {
 
 ---
 
-## 🖼️ Fitur 2 — Pilih Foto dari Galeri
+## Fitur 2 — Pilih Foto dari Galeri
 
 ### Deskripsi
 Fitur ini memungkinkan pengguna membuka galeri foto perangkat dan memilih foto yang sudah ada dengan menekan tombol **"Pilih Galeri"**. Foto yang dipilih langsung ditampilkan di halaman yang sama.
@@ -354,7 +346,7 @@ Widget _buildImage() {
 
 ---
 
-## 🔔 Fitur 3 — Notifikasi Lokal
+## Fitur 3 — Notifikasi Lokal
 
 ### Deskripsi
 Setelah foto berhasil diambil atau dipilih, aplikasi menampilkan **notifikasi lokal** di notification bar perangkat menggunakan package `flutter_local_notifications`. Terdapat dua jenis notifikasi: satu untuk foto dari kamera dan satu untuk foto dari galeri.
@@ -503,65 +495,14 @@ class NotificationService {
 
 ---
 
-## ⚙️ Konfigurasi Platform
+## Output:
 
-### Android — `AndroidManifest.xml`
+<img src="Images/gambar 1.png" width="250">
 
-```xml
-<!-- Izin menggunakan kamera -->
-<uses-permission android:name="android.permission.CAMERA" />
+<img src="Images/gambar 2.png" width="250">
 
-<!-- Izin membaca penyimpanan — Android versi < 13 -->
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
-    android:maxSdkVersion="32" />
+<img src="Images/gambar 3.png" width="250">
 
-<!-- Izin membaca media foto — Android 13+ -->
-<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+<img src="Images/gambar 4.png" width="250">
 
-<!-- Izin menampilkan notifikasi — Android 13+ -->
-<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-
-<!-- FileProvider: menyediakan URI aman untuk file foto sementara -->
-<provider
-    android:name="androidx.core.content.FileProvider"
-    android:authorities="${applicationId}.fileprovider"
-    android:exported="false"
-    android:grantUriPermissions="true">
-    <meta-data
-        android:name="android.support.FILE_PROVIDER_PATHS"
-        android:resource="@xml/file_paths" />
-</provider>
-```
-
-### iOS — `Info.plist`
-
-```xml
-<!-- Wajib ada, ditampilkan di dialog permintaan izin iOS -->
-<key>NSCameraUsageDescription</key>
-<string>Aplikasi membutuhkan akses kamera untuk mengambil foto.</string>
-
-<key>NSPhotoLibraryUsageDescription</key>
-<string>Aplikasi membutuhkan akses galeri untuk memilih foto.</string>
-```
-
----
-
-## ▶️ Cara Menjalankan
-
-```bash
-# 1. Masuk ke direktori project
-cd flutter_praktikum
-
-# 2. Install semua dependencies
-flutter pub get
-
-# 3. Jalankan di perangkat Android
-flutter run -d android
-
-# 4. Atau jalankan di emulator
-flutter emulators --launch <nama_emulator>
-flutter run
-```
-
-> **Catatan:** Semua fitur (kamera, notifikasi) hanya berfungsi penuh di **Android/iOS**.  
-> Flutter Web tidak mendukung `Image.file` dan `flutter_local_notifications`.
+<img src="Images/gambar 5.png" width="250">
