@@ -277,13 +277,13 @@ class HomeScreen extends StatelessWidget {
 
 ### Tampilan Halaman Aplikasi
 
-![Home Screen](screenshots/Image1.jpeg)
+<img src="Images/Image1.jpeg" width="250">
 
 ---
 
 ### Notifikasi yang Muncul
 
-![Notification](screenshots/Image2.jpeg)
+<img src="Images/Image2.jpeg" width="250">
 
 ---
 
