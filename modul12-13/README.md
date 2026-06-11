@@ -1,7 +1,56 @@
-# 📱 Tugas Praktik Modul 12 & 13 — Flutter Provider & Notifikasi
+<div align="center">
+  <br />
 
-> **Implementasi State Management Provider dan Local Notification pada Flutter**
+  <h1>LAPORAN PRAKTIKUM <br>
+  APLIKASI BERBASIS PLATFORM
+  </h1>
 
+  <br />
+
+  <h3>MODUL - 12&13 Mobile<br>
+  Implementasi Provider dan Notifikasi pada Flutter
+  </h3>
+
+  <br />
+
+  <img width="512" height="512" alt="telyu" src="https://github.com/user-attachments/assets/22ae9b17-5e73-48a6-b5dd-281e6c70613e" />
+
+
+
+  <br />
+  <br />
+  <br />
+
+  <h3>Disusun Oleh :</h3>
+
+  <p>
+    <strong>Andika Neviantoro</strong><br>
+    <strong>2311102167</strong><br>
+    <strong>S1 IF-11-REG01</strong>
+  </p>
+
+  <br />
+
+  <h3>Dosen Pengampu :</h3>
+
+  <p>
+    <strong>Dimas Fanny Hebrasianto Permadi, S.ST., M.Kom</strong>
+  </p>
+  
+  <br />
+  <br />
+    <h4>Asisten Praktikum :</h4>
+    <strong>Apri Pandu Wicaksono </strong> <br>
+    <strong>Rangga Pradarrell Fathi</strong>
+  <br />
+
+  <h3>LABORATORIUM HIGH PERFORMANCE
+ <br>FAKULTAS INFORMATIKA <br>UNIVERSITAS TELKOM PURWOKERTO <br>2026</h3>
+</div>
+
+<hr>
+
+## PENGERJAAN
 ---
 
 ## 📁 Struktur Proyek
@@ -250,28 +299,6 @@ Aplikasi menggunakan **Local Notification** melalui package `flutter_local_notif
 
 ---
 
-## ⚙️ Cara Menjalankan
-
-```bash
-# 1. Clone / salin proyek
-cd counter_provider_app
-
-# 2. Install dependencies
-flutter pub get
-
-# 3. Jalankan di emulator / perangkat fisik
-flutter run
-```
-
-> **Catatan:** Pastikan izin notifikasi diaktifkan di perangkat Android (Android 13+ memerlukan permission `POST_NOTIFICATIONS` di `AndroidManifest.xml`).
-
-```xml
-<!-- Tambahkan di android/app/src/main/AndroidManifest.xml -->
-<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
-```
-
----
-
 ## 📦 Dependencies
 
 | Package | Versi | Fungsi |
@@ -280,6 +307,4 @@ flutter run
 | `flutter_local_notifications` | ^17.2.2 | Local notification |
 
 ---
-
-*Tugas Praktik Modul 12 & 13 — Pemrograman Mobile Flutter*
 
